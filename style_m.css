@@ -1,0 +1,473 @@
+/* Conteneur principal */
+.container {
+  max-width: 1142px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Menu principal */
+.menu {
+    width: 100%;
+    height: 148px;
+    padding: 15px 15px;
+    position: relative;
+    margin-top: 5px;
+    z-index: 10; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    position: relative;
+    width: 100%;
+    top: 30px;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.menu-item {
+    color: #273353;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Style du bouton burger */
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.burger-icon span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #273353;
+    transition: all 0.3s ease;
+}
+
+.menu-title {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  text-align: center;
+  color: #273353;
+  font-size: 27px;
+  font-family: 'Abhaya Libre ExtraBold', sans-serif;
+  font-weight: 700;
+}
+
+.menu-divider {
+  height: 10px;
+  border-top: 1px solid #C0C1B7;
+  position: relative;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-background {
+  width: 184px;
+  height: 35px;
+  background: #F4F5F6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.search-text {
+  color: #A5A7A8;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.search-icon {
+    width: 32px;
+    height: 32px;
+    background: #A5A7A9;
+    border-radius: 50%; /* Forme circulaire */
+    position: relative; /* Pour positionner l'icône interne */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/* Ajout d'une icône de loupe */
+.search-icon::before {
+    content: "\1F50D"; /* Unicode de la loupe */
+    font-size: 16px;
+    color: white;
+}
+
+/* Section 1 */
+.section1 {
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    position: relative;
+    border-top: 5px solid #ccc;
+    background: #E3E2E0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Permet de passer en colonne si nécessaire */
+}
+
+.section1-content {
+    flex: 1;
+    text-align: left;
+}
+
+.section1-image {
+    width: 40%; /* Ajuste la taille de l'image pour les grands écrans */
+    height: auto;
+    max-width: 100%; /* Assure que l'image ne dépasse jamais la taille du conteneur */
+}
+
+.section1-arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #A5A7A8; /* Couleur de la flèche */
+    transform: rotate(90deg); /* Rotation de la flèche pour inverser la direction */
+    margin-left: auto;
+}
+
+.section1-text1 {
+    color: #526474;
+    font-size: 3.5em;
+    font-family: 'Abhaya Libre ExtraBold', sans-serif;
+    font-weight: 800;
+}
+
+.section1-text2 {
+    font-size: 1.2em;
+    color: #667789;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+/* Section 2 */
+.section2 {
+  width: 100%;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.section2-title {
+  color: #273353;
+  font-size: 2em;
+  font-family: 'Abhaya Libre ExtraBold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section2-description {
+  color: #526474;
+  font-size: 1em;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.section2-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.section2-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.section2-caption {
+  color: #445D77;
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* Section 3 */
+
+.section3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.section3-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section3-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permet de passer en ligne sur grands écrans */
+}
+
+.section3-block {
+    text-align: center;
+    max-width: 300px;
+    padding: 10px;
+    background: #E3E2E0;
+}
+
+.section3-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.section3-artist {
+  color: #273353;
+  font-size: 1.3em;
+  font-family: 'Abhaya Libre ExtraBold', sans-serif;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.section3-caption {
+  color: #445D77;
+  font-size: 1em;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+/* Section 4 */
+.section4 {
+  width: 100%;
+  background: #2E6C75;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.section4-title {
+  font-size: 2em;
+  font-family: 'Abhaya Libre ExtraBold', sans-serif;
+  font-weight: 800;
+}
+
+.section4-description {
+  font-size: 1em;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.section4-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.section4-email-field,
+.section4-subscribe-button {
+  width: 80%;
+  max-width: 300px;
+  height: 44px;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.section4-subscribe-button {
+  background: #9D054E;
+  color: white;
+  font-size: 1.2em;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+}
+
+/* Section 5 */
+.section5 {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #F4F5F6;
+}
+.section5-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.section5-link {
+  color: #273353;
+  font-size: 1.2em;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+}
+.section5-contact {
+  font-size: 1em;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #273353;
+  margin-top: 10px;
+}
+.section5-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.section5-social-icon {
+  width: 48px;
+  height: 48px;
+  background: #273353;
+  border-radius: 50%;
+  overflow: hidden; /* Coupe tout contenu qui dépasse */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style pour l'image à l'intérieur de l'icône */
+.section5-social-icon img {
+    width: 100%; /* L'image prend toute la largeur de l'icône */
+    height: 100%; /* L'image prend toute la hauteur de l'icône */
+    object-fit: cover; /* Ajuste l'image pour remplir sans distorsion */
+}
+
+/* Responsive - menu */
+@media (max-width: 768px) {
+    .menu-links {
+        display: none; /* Cache le menu par défaut */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .burger-icon {
+        display: flex; /* Affiche le bouton burger */
+    }
+
+    /* Animation pour le bouton burger */
+    .burger-icon.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-icon.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+/* Affiche le menu quand le bouton burger est actif */
+.menu-links.active {
+    display: flex;
+}
+
+/* * Responsive -  section1 */
+@media (max-width: 768px) {
+    .section1 {
+        flex-direction: column; /* Passe en colonne sur les petits écrans */
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .section1-content {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .section1-text1 {
+        font-size: 2em; /* Réduit la taille de la police pour mobile */
+    }
+
+    .section1-text2 {
+        font-size: 1em;
+    }
+
+    .section1-image {
+        width: 80%; /* Ajuste l'image pour qu'elle prenne plus d'espace en mobile */
+    }
+    .section1-arrow {
+        display: none; /* Masque la flèche pour économiser de l'espace en mobile */
+    }
+
+}
+
+/* Responsive section3 */
+@media (max-width: 768px) {
+    .section3-content {
+        flex-direction: column; /* Colonne sur petits écrans */
+        align-items: center;    /* Centre les éléments */
+    }
+
+    .section3-title {
+        font-size: 2em; /* Ajuste la taille pour mobile */
+    }
+
+    .section3-block {
+        width: 80%; /* Prend une largeur de 80% sur mobile pour rester centré */
+        max-width: 100%;
+    }
+}
+
+/* Responsive - reste */
+@media (max-width: 768px) {
+  .menu-links,
+  .section2-images,
+  .section5-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section2-title, .section4-title {
+    font-size: 3.5em;
+  }
+}
